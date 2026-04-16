@@ -206,3 +206,13 @@ hashmap.c:48:39: error: implicit declaration of function ‘size_of’ [-Wimplic
    48 |     HashMap * Mapa = (HashMap*)malloc(size_of(capacity));
       |                                       ^~~~~~~
 13ce02c
+Thu Apr 16 08:43:34 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:48:39: error: expected expression before ‘,’ token
+   48 |     HashMap * Mapa = (HashMap*)calloc(,sizeof(capacity));
+      |                                       ^
+8e6cba6
