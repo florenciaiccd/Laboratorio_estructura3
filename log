@@ -1,0 +1,14 @@
+Thu Apr 16 08:26:49 PM UTC 2026: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:49:13: error: expected identifier or ‘(’ before ‘->’ token
+   49 |     HashMap -> Mapa -> current = -1;
+      |             ^~
+hashmap.c:48:15: error: unused variable ‘Mapa’ [-Werror=unused-variable]
+   48 |     HashMap * Mapa = (HashMap*)malloc(sizeof(HashMap));
+      |               ^~~~
+cc1: all warnings being treated as errors
+0760022
