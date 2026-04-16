@@ -58,3 +58,17 @@ Thu Apr 16 08:30:20 PM UTC 2026:
  tests:  0|7
 total_score: 0/60
 b8c1585
+Thu Apr 16 08:31:13 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:49:10: error: array subscript ‘HashMap {aka struct HashMap}[0]’ is partly outside array bounds of ‘unsigned char[8]’ [-Werror=array-bounds=]
+   49 |     Mapa -> current = -1;
+      |          ^~
+hashmap.c:48:32: note: object of size 8 allocated by ‘malloc’
+   48 |     HashMap * Mapa = (HashMap*)malloc(sizeof(capacity));
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+a1897b5

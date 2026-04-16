@@ -48,7 +48,7 @@ HashMap * createMap(long capacity) {
     HashMap * Mapa = (HashMap*)malloc(sizeof(capacity));
     Mapa -> current = -1;
 
-    return NULL;
+    return Mapa;
 }
 
 // 2. Implemente la función void insertMap(HashMap * map, char * key, void * value). 
