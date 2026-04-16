@@ -26,3 +26,15 @@ In file included from test.c:2:
   675 | extern void *calloc (size_t __nmemb, size_t __size)
       |              ^~~~~~
 a46e1f9
+Thu Apr 16 08:28:24 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:48:32: error: too few arguments to function ‘calloc’
+   48 |     HashMap * Mapa = (HashMap*)calloc(sizeof(HashMap));
+      |                                ^~~~~~
+In file included from test.c:2:
+/nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/stdlib.h:675:14: note: declared here
+  675 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+fcb49c4
