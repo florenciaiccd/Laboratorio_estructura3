@@ -198,3 +198,11 @@ hashmap.c:48:39: error: implicit declaration of function ‘size_of’ [-Wimplic
    48 |     HashMap * Mapa = (HashMap*)malloc(size_of(capacity));
       |                                       ^~~~~~~
 fc65d83
+Thu Apr 16 08:36:23 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:48:39: error: implicit declaration of function ‘size_of’ [-Wimplicit-function-declaration]
+   48 |     HashMap * Mapa = (HashMap*)malloc(size_of(capacity));
+      |                                       ^~~~~~~
+13ce02c
