@@ -45,7 +45,7 @@ int is_equal(void* key1, void* key2){
 // Inicialice el índice current a -1.
 
 HashMap * createMap(long capacity) {
-    HashMap * Mapa = (HashMap*)calloc(void * NULL,sizeof(capacity));
+    HashMap * Mapa = (HashMap*)calloc(size_t 2, sizeof(capacity));
     Mapa -> current = -1;
 
     return Mapa;
