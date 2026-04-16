@@ -188,3 +188,13 @@ In file included from test.c:2:
   675 | extern void *calloc (size_t __nmemb, size_t __size)
       |                      ~~~~~~~^~~~~~~
 4e1c0b3
+Thu Apr 16 08:36:05 PM UTC 2026: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:48:39: error: implicit declaration of function ‘size_of’ [-Wimplicit-function-declaration]
+   48 |     HashMap * Mapa = (HashMap*)malloc(size_of(capacity));
+      |                                       ^~~~~~~
+fc65d83
