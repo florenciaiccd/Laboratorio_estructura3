@@ -298,3 +298,14 @@ hashmap.c:52:9: error: ‘map’ undeclared (first use in this function)
       |         ^~~
 hashmap.c:52:9: note: each undeclared identifier is reported only once for each function it appears in
 e7a36a9
+Fri Apr 17 10:02:11 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:52:17: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘bucket’; did you mean ‘buckets’?
+   52 |         Mapa -> bucket[i] = NULL;
+      |                 ^~~~~~
+      |                 buckets
+4b51440

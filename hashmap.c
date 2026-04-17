@@ -49,7 +49,7 @@ HashMap * createMap(long capacity) {
     Mapa -> buckets = (Pair**)calloc(capacity, sizeof(HashMap));
     
     for(int i = 0; i < capacity; i++){
-        map -> bucket[i] = NULL;
+        Mapa -> bucket[i] = NULL;
     }
     
     Mapa -> current = -1;
