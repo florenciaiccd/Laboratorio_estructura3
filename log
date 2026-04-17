@@ -341,3 +341,15 @@ In file included from test.c:2:
   675 | extern void *calloc (size_t __nmemb, size_t __size)
       |              ^~~~~~
 181ca42
+Fri Apr 17 10:09:59 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:48:39: error: ‘cpacity’ undeclared (first use in this function); did you mean ‘capacity’?
+   48 |     HashMap * Mapa = (HashMap*)calloc(cpacity, sizeof(HashMap));
+      |                                       ^~~~~~~
+      |                                       capacity
+hashmap.c:48:39: note: each undeclared identifier is reported only once for each function it appears in
+a9acad3
