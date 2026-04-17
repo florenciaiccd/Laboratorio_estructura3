@@ -287,3 +287,14 @@ Thu Apr 16 08:55:36 PM UTC 2026:
  tests:  0|7
 total_score: 0/60
 77886d1
+Fri Apr 17 10:01:55 PM UTC 2026: 
+ hashmap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:52:9: error: ‘map’ undeclared (first use in this function)
+   52 |         map -> bucket[i] = NULL;
+      |         ^~~
+hashmap.c:52:9: note: each undeclared identifier is reported only once for each function it appears in
+e7a36a9
