@@ -50,6 +50,7 @@ HashMap * createMap(long capacity) {
     
     for(int i = 0; i < Mapa -> capacity; i++){
         Mapa -> buckets[i] = NULL;
+        i++;
     }
     
     Mapa -> current = -1;
