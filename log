@@ -377,3 +377,9 @@ hashmap.c:51:24: error: ‘mapa’ undeclared (first use in this function); did 
       |                        Mapa
 hashmap.c:51:24: note: each undeclared identifier is reported only once for each function it appears in
 c846d65
+Fri Apr 17 10:18:28 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|7
+total_score: 0/60
+4f3988c
