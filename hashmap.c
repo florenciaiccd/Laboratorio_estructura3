@@ -48,7 +48,7 @@ HashMap * createMap(long capacity) {
     HashMap * Mapa = (HashMap*)calloc(1, sizeof(HashMap));
     Mapa -> buckets = (Pair**)calloc(capacity, sizeof(Pair*));
     
-    for(int i = 0; i < capacity; i++){
+    for(int i = 0; i < mapa -> capacity; i++){
         Mapa -> buckets[i] = NULL;
     }
     
