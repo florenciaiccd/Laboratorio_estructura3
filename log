@@ -353,3 +353,9 @@ hashmap.c:48:39: error: ‘cpacity’ undeclared (first use in this function); d
       |                                       capacity
 hashmap.c:48:39: note: each undeclared identifier is reported only once for each function it appears in
 a9acad3
+Fri Apr 17 10:10:19 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|7
+total_score: 0/60
+18495bf
