@@ -753,3 +753,15 @@ hashmap.c:142:13: error: ‘HashMap’ {aka ‘struct HashMap’} has no member 
   142 |         map -> pair -> key == NULL;
       |             ^~
 5eab62a
+Sun Apr 19 09:48:37 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:142:9: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+  142 |         pair -> key == NULL;
+      |         ^~~~
+      |         Pair
+hashmap.c:142:9: note: each undeclared identifier is reported only once for each function it appears in
+f35a252
