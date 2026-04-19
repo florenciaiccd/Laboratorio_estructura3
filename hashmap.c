@@ -47,8 +47,9 @@ int is_equal(void* key1, void* key2){
 HashMap * createMap(long capacity) {
     HashMap * Mapa = (HashMap*)malloc(sizeof(HashMap));
     Mapa -> buckets = (Pair**)malloc(sizeof(HashMap));
-    
-    for(int i = 0; i < Mapa -> capacity; i++){
+
+    Mapa -> capacity = capacity:
+    for(int i = 0; i < cpacity; i++){
         Mapa -> buckets[i] = NULL;
     }
     
