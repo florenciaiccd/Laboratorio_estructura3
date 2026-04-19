@@ -572,3 +572,13 @@ hashmap.c:73:33: error: ‘capacity’ undeclared (first use in this function)
       |                                 ^~~~~~~~
 hashmap.c:73:33: note: each undeclared identifier is reported only once for each function it appears in
 3a94256
+Sun Apr 19 08:47:07 PM UTC 2026: 
+ hashmap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:73:20: error: expected expression before ‘int’
+   73 |     int posicion = int(key) % map -> capacity;
+      |                    ^~~
+45d96e9
