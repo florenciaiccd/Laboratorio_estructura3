@@ -107,6 +107,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
 
     else if(strcmp(map -> buckets[posicion] -> key, key) == 0){
+        map -> current = posicion;
         return map -> buckets[posicion];
     }
 
@@ -115,6 +116,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         posicion = posicion +1;
         while(map -> buckets[posicion] != NULL && posicion != aux){
             if(strcmp(map -> buckets[posicion] -> key, key) == 0){
+                map -> current = poscicion;
                 return map -> buckets[posicion];
             }
             posicion = (posicion+1) % map -> capacity;

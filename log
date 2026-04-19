@@ -678,3 +678,15 @@ Sun Apr 19 09:36:47 PM UTC 2026:
  tests:  6|4
 total_score: 20/60
 8c80b59
+Sun Apr 19 09:39:33 PM UTC 2026: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:119:34: error: ‘poscicion’ undeclared (first use in this function); did you mean ‘posicion’?
+  119 |                 map -> current = poscicion;
+      |                                  ^~~~~~~~~
+      |                                  posicion
+hashmap.c:119:34: note: each undeclared identifier is reported only once for each function it appears in
+50a4f27
