@@ -477,3 +477,14 @@ hashmap.c:76:75: error: comparison between pointer and integer [-Werror]
       |                                                                           ^~
 cc1: all warnings being treated as errors
 2d6e1df
+Sun Apr 19 07:57:51 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:73:23: error: ‘capacity’ undeclared (first use in this function)
+   73 |     map -> capacity = capacity;
+      |                       ^~~~~~~~
+hashmap.c:73:23: note: each undeclared identifier is reported only once for each function it appears in
+57e925a
