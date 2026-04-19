@@ -139,7 +139,7 @@ void eraseMap(HashMap * map,  char * key) {
     }
 
     else if(strcmp(map -> buckets[posicion] -> key, key) == 0){
-        Pair -> key == NULL;
+        Pair -> key = NULL;
         map -> size = map -> size -1;
     }
 
