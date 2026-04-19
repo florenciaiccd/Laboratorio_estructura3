@@ -712,3 +712,14 @@ hashmap.c:142:13: error: ‘HashMap’ {aka ‘struct HashMap’} has no member 
   142 |         map -> Pair -> key == NULL;
       |             ^~
 c23974d
+Sun Apr 19 09:46:16 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:142:16: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘buckest’; did you mean ‘buckets’?
+  142 |         map -> buckest[posicion] -> key == NULL;
+      |                ^~~~~~~
+      |                buckets
+aead1bc
