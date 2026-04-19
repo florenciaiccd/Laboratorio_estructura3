@@ -462,3 +462,18 @@ Sun Apr 19 07:16:24 PM UTC 2026:
  tests:  1|6
 total_score: 5/60
 78efb26
+Sun Apr 19 07:56:28 PM UTC 2026: 
+ hashmap.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:73:23: error: ‘capacity’ undeclared (first use in this function)
+   73 |     map -> capacity = capacity;
+      |                       ^~~~~~~~
+hashmap.c:73:23: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:76:75: error: comparison between pointer and integer [-Werror]
+   76 |     if(map ->buckets[posicion] == NULL || map -> buckets[posicion] -> key == -1){
+      |                                                                           ^~
+cc1: all warnings being treated as errors
+2d6e1df
