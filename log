@@ -417,3 +417,14 @@ Sun Apr 19 07:13:17 PM UTC 2026:
  tests:  0|7
 total_score: 0/60
 1db50f9
+Sun Apr 19 07:13:47 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:51:29: error: ‘*Mapa.capacity’ is used uninitialized [-Werror=uninitialized]
+   51 |     for(int i = 0; i < Mapa -> capacity; i++){
+      |                        ~~~~~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+0f0024f
