@@ -623,3 +623,16 @@ Sun Apr 19 08:55:09 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 e47af7f
+Sun Apr 19 09:07:02 PM UTC 2026: 
+ hashmap.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:103:20: error: too few arguments to function ‘hash’
+  103 |     int posicion = hash(key);
+      |                    ^~~~
+hashmap.c:28:6: note: declared here
+   28 | long hash( char * key, long capacity) {
+      |      ^~~~
+9942072
