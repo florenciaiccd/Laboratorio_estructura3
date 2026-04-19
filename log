@@ -775,3 +775,11 @@ hashmap.c:142:14: error: expected identifier or ‘(’ before ‘->’ token
   142 |         Pair -> key == NULL;
       |              ^~
 d5883a9
+Sun Apr 19 09:49:09 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:142:14: error: expected identifier or ‘(’ before ‘->’ token
+  142 |         Pair -> key == NULL;
+      |              ^~
+14588c6
