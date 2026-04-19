@@ -600,3 +600,14 @@ Sun Apr 19 08:50:52 PM UTC 2026:
  tests:  4|5
 total_score: 15/60
 40e1dd8
+Sun Apr 19 08:52:13 PM UTC 2026: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:80:9: error: ‘size’ undeclared (first use in this function)
+   80 |         size++;
+      |         ^~~~
+hashmap.c:80:9: note: each undeclared identifier is reported only once for each function it appears in
+2db82a6

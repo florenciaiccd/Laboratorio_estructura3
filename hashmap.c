@@ -77,6 +77,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         Nuevo -> value = value;
         Nuevo -> key = key;
         map->buckets[posicion]= Nuevo;
+        size++;
     }
     else{
         while(map -> buckets[posicion] != NULL){
@@ -86,6 +87,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         Nuevo -> value = value;
         Nuevo -> key = key;
         map->buckets[posicion]= Nuevo;
+        size++;
     }
 }
 
