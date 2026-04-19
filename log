@@ -690,3 +690,9 @@ hashmap.c:119:34: error: ‘poscicion’ undeclared (first use in this function)
       |                                  posicion
 hashmap.c:119:34: note: each undeclared identifier is reported only once for each function it appears in
 50a4f27
+Sun Apr 19 09:39:44 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|3
+total_score: 30/60
+85e9171
