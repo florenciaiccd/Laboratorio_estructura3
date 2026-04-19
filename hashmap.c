@@ -132,7 +132,16 @@ Pair * searchMap(HashMap * map,  char * key) {
 // Recuerde actualizar la variable size.
 
 void eraseMap(HashMap * map,  char * key) {    
+    int posicion = hash(key, map -> capacity);
 
+    if(map -> buckets[posicion] == NULL){
+        return NULL;
+    }
+
+    else if(strcmp(map -> buckets[posicion] -> key, key) == 0){
+        map -> Pair -> key == NULL;
+        map -> size = map -> size -1;
+    }
 
 }
 

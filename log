@@ -696,3 +696,19 @@ Sun Apr 19 09:39:44 PM UTC 2026:
  tests:  8|3
 total_score: 30/60
 85e9171
+Sun Apr 19 09:45:20 PM UTC 2026: 
+ hashmap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:138:16: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+  138 |         return NULL;
+      |                ^~~~
+hashmap.c:134:6: note: declared here
+  134 | void eraseMap(HashMap * map,  char * key) {
+      |      ^~~~~~~~
+hashmap.c:142:13: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘Pair’
+  142 |         map -> Pair -> key == NULL;
+      |             ^~
+c23974d
