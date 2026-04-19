@@ -502,3 +502,17 @@ hashmap.c:74:26: error: ‘capacity’ undeclared (first use in this function)
       |                          ^~~~~~~~
 hashmap.c:74:26: note: each undeclared identifier is reported only once for each function it appears in
 858bb6a
+Sun Apr 19 07:59:06 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:73:13: error: expected identifier or ‘(’ before ‘->’ token
+   73 |     HashMap -> map -> capacity = capacity;
+      |             ^~
+hashmap.c:74:26: error: ‘capacity’ undeclared (first use in this function)
+   74 |     int posicion = key % capacity;
+      |                          ^~~~~~~~
+hashmap.c:74:26: note: each undeclared identifier is reported only once for each function it appears in
+61277d0
