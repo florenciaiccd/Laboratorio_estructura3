@@ -723,3 +723,14 @@ hashmap.c:142:16: error: ‘HashMap’ {aka ‘struct HashMap’} has no member 
       |                ^~~~~~~
       |                buckets
 aead1bc
+Sun Apr 19 09:46:27 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:142:41: error: statement with no effect [-Werror=unused-value]
+  142 |         map -> buckets[posicion] -> key == NULL;
+      |                                         ^
+cc1: all warnings being treated as errors
+b64e2ae
