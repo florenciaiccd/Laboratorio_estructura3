@@ -70,7 +70,7 @@ HashMap * createMap(long capacity) {
 
 void insertMap(HashMap * map, char * key, void * value) {
     //función hash
-    HashMap -> map -> capacity = capacity;
+    map -> capacity = capacity;
     int posicion = key % capacity; 
 
     if(map ->buckets[posicion] == NULL || map -> buckets[posicion] -> key == NULL){
