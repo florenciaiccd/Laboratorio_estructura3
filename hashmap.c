@@ -106,7 +106,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         return map -> buckets[posicion];
     }
 
-    else if( map -> buckets[posicion] -> key == NULL){
+    if else( map -> buckets[posicion] -> key == NULL){
         return NULL;
     }
 
