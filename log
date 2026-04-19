@@ -661,3 +661,14 @@ Sun Apr 19 09:13:00 PM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b727811
+Sun Apr 19 09:36:32 PM UTC 2026: 
+ hashmap.c | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:114:9: error: ‘aux’ undeclared (first use in this function)
+  114 |         aux = posicion;
+      |         ^~~
+hashmap.c:114:9: note: each undeclared identifier is reported only once for each function it appears in
+16ffc4b

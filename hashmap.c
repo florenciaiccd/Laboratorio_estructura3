@@ -102,21 +102,24 @@ Pair * searchMap(HashMap * map,  char * key) {
 
     int posicion = hash(key, map -> capacity);
 
-    if(map -> buckets[posicion] -> key == key){
-        return map -> buckets[posicion];
-    }
-
-    else if(map -> buckets[posicion] -> key == NULL){
+    if(map -> buckets[posicion] == NULL){
         return NULL;
     }
 
-    else{
-        while(map-> buckets[posicion] -> key != key){
-            posicion = (posicion+1) % map -> capacity;
-        }
+    else if(strcmp(map -> buckets[posicion] -> key, key) == 0){
         return map -> buckets[posicion];
     }
 
+    else{
+        aux = posicion;
+        posicion = posicion +1;
+        while(map -> buckets[posicion] != NULL && posicion != aux){
+            if(strcmp(map -> buckets[posicion] -> key, key) == 0){
+                return map -> buckets[posicion];
+            }
+            posicion = (posicion+1) % map -> capacity;
+        }
+    }
     return NULL;
 }
 
