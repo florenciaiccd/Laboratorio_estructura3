@@ -805,3 +805,14 @@ Sun Apr 19 09:51:33 PM UTC 2026:
  tests:  11|2
 total_score: 40/60
 ca17b50
+Sun Apr 19 11:20:14 PM UTC 2026: 
+ hashmap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:168:37: error: ‘capacity’ undeclared (first use in this function)
+  168 |         posicion = (posicion + 1) % capacity;
+      |                                     ^~~~~~~~
+hashmap.c:168:37: note: each undeclared identifier is reported only once for each function it appears in
+d3823ad
