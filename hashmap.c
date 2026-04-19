@@ -166,9 +166,10 @@ Pair * firstMap(HashMap * map) {
     int posicion = 0;
     while(map -> buckets[posicion] == NULL ){
         posicion = (posicion + 1) % map ->capacity;
-
+        
     }
-    
+
+    map -> current = map -> buckets[posicion]
     return map -> buckets[posicion];
 }
 

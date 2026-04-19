@@ -822,3 +822,23 @@ Sun Apr 19 11:20:26 PM UTC 2026:
  tests:  12|2
 total_score: 40/60
 bd4b3ab
+Sun Apr 19 11:21:56 PM UTC 2026: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:172:20: error: assignment to ‘long int’ from ‘Pair *’ makes integer from pointer without a cast [-Wint-conversion]
+  172 |     map -> current = map -> buckets[posicion]
+      |                    ^
+hashmap.c:172:46: error: expected ‘;’ before ‘return’
+  172 |     map -> current = map -> buckets[posicion]
+      |                                              ^
+      |                                              ;
+  173 |     return map -> buckets[posicion];
+      |     ~~~~~~                                    
+hashmap.c:174:1: error: control reaches end of non-void function [-Werror=return-type]
+  174 | }
+      | ^
+cc1: all warnings being treated as errors
+11daf0d
