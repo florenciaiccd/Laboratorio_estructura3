@@ -100,7 +100,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
 
-    int posicion = hash(key);
+    int posicion = hash(key, map -> capacity);
 
     if(map -> buckets[posicion] -> key == key){
         return map -> buckets[posicion];
