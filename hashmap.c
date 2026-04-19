@@ -165,7 +165,7 @@ Pair * firstMap(HashMap * map) {
     
     int posicion = 0;
     while(map -> buckets[posicion] == NULL ){
-        posicion = (posicion + 1) % capacity;
+        posicion = (posicion + 1) % map ->capacity;
 
     }
     
