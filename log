@@ -852,3 +852,9 @@ hashmap.c:172:20: error: assignment to ‘long int’ from ‘Pair *’ makes in
   172 |     map -> current = map -> buckets[posicion];
       |                    ^
 2904f0b
+Sun Apr 19 11:22:39 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|2
+total_score: 40/60
+8b69ead
