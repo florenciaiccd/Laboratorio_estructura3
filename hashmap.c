@@ -169,7 +169,7 @@ Pair * firstMap(HashMap * map) {
         
     }
 
-    map -> current = map -> buckets[posicion]
+    map -> current = map -> buckets[posicion];
     return map -> buckets[posicion];
 }
 
