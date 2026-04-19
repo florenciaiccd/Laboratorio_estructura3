@@ -111,7 +111,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
 
     else{
-        aux = posicion;
+        int aux = posicion;
         posicion = posicion +1;
         while(map -> buckets[posicion] != NULL && posicion != aux){
             if(strcmp(map -> buckets[posicion] -> key, key) == 0){
