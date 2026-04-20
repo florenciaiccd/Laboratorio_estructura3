@@ -169,7 +169,7 @@ Pair * firstMap(HashMap * map) {
             map -> current = posicion;
             return map -> buckets[posicion];
         }
-        posicion = (posicion +1) % map -> capacity;
+        posicion++;
     }
    return NULL;
 }
