@@ -179,7 +179,6 @@ Pair * nextMap(HashMap * map) {
         if(map -> buckets[posicion] != NULL){
             return map -> buckets[posicion];
         }
-        posicion++;
     }
     return NULL;
 }
