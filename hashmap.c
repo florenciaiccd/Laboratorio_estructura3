@@ -174,15 +174,11 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-    
-    for(int posicion = map -> current + 1 ; posicion < map -> capacity; posicion++){
-        if(map -> buckets[posicion] != NULL){
-            map -> current = posicion;
-            return map -> buckets[posicion] -> value;
-        }
-        posicion++;
-    }
-    return NULL;
+
+    int posicion = map -> current +1;
+
+    return map -> buckets[posicion]-> value;
+
 }
 
 
