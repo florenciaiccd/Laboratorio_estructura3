@@ -164,9 +164,8 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     
     for(int posicion = 0; posicion < map -> capacity; posicion++){
-        if(map -> buckets[posicion] != NULL){
+        if(map -> buckets[posicion] -> key != NULL){
             map -> current = posicion;
-            map -> size = map -> size -1;
             return map -> buckets[posicion];
         }
         posicion++;
