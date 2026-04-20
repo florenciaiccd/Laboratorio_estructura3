@@ -164,10 +164,13 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     
     int posicion = 0;
-    map -> current = posicion;
-    
+    int aux = 0;
     while(map -> buckets[posicion] == NULL ){
         posicion = (posicion + 1) % map ->capacity;
+        aux++;
+        if(aux == map -> capacity){
+            return NULL;
+        }
     }
 
     map -> current = posicion;
@@ -176,6 +179,7 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
 
+    
     return NULL;
 }
 
