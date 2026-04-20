@@ -179,7 +179,7 @@ Pair * nextMap(HashMap * map) {
 
     int posicion = map -> current;
     
-    for(int posicion = 0; posicion < map -> capacity; posicion++){
+    for(posicion ; posicion < map -> capacity; posicion++){
         if(map -> buckets[posicion] -> key != NULL){
             map -> current = posicion;
             return map -> buckets[posicion];
