@@ -164,6 +164,8 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     
     int posicion = 0;
+    map -> current = posicion;
+    
     while(map -> buckets[posicion] == NULL ){
         posicion = (posicion + 1) % map ->capacity;
     }
