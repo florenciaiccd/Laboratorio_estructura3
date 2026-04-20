@@ -166,6 +166,7 @@ Pair * firstMap(HashMap * map) {
     for(int posicion = 0; posicion < map -> capacity; posicion++){
         if(map -> buckets[posicion] != NULL){
             map -> current = posicion;
+            map -> size = map -> size -1;
             return map -> buckets[posicion];
         }
         posicion++;
