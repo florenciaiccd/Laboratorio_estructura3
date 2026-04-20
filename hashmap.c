@@ -205,7 +205,7 @@ void enlarge(HashMap * map) {
     map -> size = 0;
 
     for(int i = 0;  i < map -> capacity; i++){
-        if(old_buckets != NULL){
+        if(map -> buckets -> key != NULL){
             insertMap(map, old_buckets[i]-> key, old_buckets[i] -> value);
         }
     }
