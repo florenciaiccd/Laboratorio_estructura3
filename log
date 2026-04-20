@@ -1000,3 +1000,25 @@ Mon Apr 20 01:30:20 AM UTC 2026:
  tests:  16|1
 total_score: 50/60
 642532f
+Mon Apr 20 01:43:41 AM UTC 2026: 
+ hashmap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:202:39: error: expected ‘;’ before ‘map’
+  202 |     map -> capacity = map-> capacity*2
+      |                                       ^
+      |                                       ;
+  203 | 
+  204 |     map -> buckets = (Pair**)calloc(map -> capacity, sizeof(Pair*));
+      |     ~~~                                
+hashmap.c:207:32: error: ‘old_buckets’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  207 |     for(int i = 0; old_buckets -> capacity; i++){
+      |                                ^~
+      |                    (*         )
+hashmap.c:208:24: error: ‘old_buckets’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  208 |         if(old_buckets -> buckets[i] != NULL){
+      |                        ^~
+      |            (*         )
+cb75b56
