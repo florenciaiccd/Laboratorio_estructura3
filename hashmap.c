@@ -204,7 +204,7 @@ void enlarge(HashMap * map) {
     map -> buckets = (Pair**)calloc(map -> capacity, sizeof(Pair*));
     map -> size = 0;
 
-    for(int i = 0; old_buckets -> capacity; i++){
+    for(int i = 0;  i < old_buckets -> capacity; i++){
         if(old_buckets -> buckets[i] != NULL){
             insertMap(map, old_buckets[i]-> key, old_buckets[i] -> value);
         }

@@ -1037,3 +1037,18 @@ hashmap.c:208:24: error: ‘old_buckets’ is a pointer to pointer; did you mean
       |                        ^~
       |            (*         )
 4b95deb
+Mon Apr 20 01:45:00 AM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:207:37: error: ‘old_buckets’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  207 |     for(int i = 0;  i < old_buckets -> capacity; i++){
+      |                                     ^~
+      |                         (*         )
+hashmap.c:208:24: error: ‘old_buckets’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  208 |         if(old_buckets -> buckets[i] != NULL){
+      |                        ^~
+      |            (*         )
+644c0d8
