@@ -162,8 +162,8 @@ void eraseMap(HashMap * map,  char * key) {
 // Recuerde actualizar el índice.
 
 Pair * firstMap(HashMap * map) {
-    
     int posicion = 0;
+    map -> current = posicion;
     while(posicion < map -> capacity){
         if(map -> buckets[posicion] != NULL){
             map -> current = posicion;
