@@ -171,11 +171,12 @@ Pair * firstMap(HashMap * map) {
         }
         posicion++;
     }
-   return NULL;
+    return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
 
+    map -> current = map -> current +1;
     
     return NULL;
 }
